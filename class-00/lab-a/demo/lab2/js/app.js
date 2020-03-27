@@ -163,6 +163,8 @@ let Student = function(name, age, hometown) {
 
 let joe = new Student('Joe', 'Schmoe', 100);
 
+// var Student = (name,age,homeTown) =>{ this.name = name; this.age = age; this.homeTown = homeTown;}
+
 // TODO: Uncomment the following line of code to see the output in the browser console
 // Note that the arrow function will cause this code to break!
 console.log(joe);
@@ -174,7 +176,7 @@ console.log(joe);
 Student.prototype.greeting = function() {
   return `Hi, my name is ${this.name}`;
 };
-
+// Student.prototype.greeting = () => `Hi, my name is ${this.name}`;//covert to arrow function
 // TODO: Uncomment the following line of code to see the output in the browser console
 // Note that the arrow function will cause this method to break!
 console.log(joe.greeting());
